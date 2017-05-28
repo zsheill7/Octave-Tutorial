@@ -1,7 +1,6 @@
 ## Guide to Common Octave Commands
 
-<p>I learned all of this from Andrew Ng's course on Coursera - be sure to check it out if you want to learn more!</p>
-<a href="https://www.coursera.org/learn/machine-learning">Machine Learning Course</a>
+<p>I learned all of this from <a href="https://www.coursera.org/learn/machine-learning">Andrew Ng's course on Coursera</a> - be sure to check it out if you want to learn more!</p>
 
 <p>If you have not yet downloaded Octave, use the following link:<p>
 <a href = "https://sourceforge.net/projects/octave/files/Octave%20MacOSX%20Binary/2013-12-30%20binary%20installer%20of%20Octave%203.8.0%20for%20OSX%2010.9.1%20%28beta%29/GNU_Octave_3.8.0-6.dmg/download">Octave Download</a>
