@@ -229,6 +229,7 @@ ans =  4
 ```
 
 <h2>Working with Files</h2>
+
 ```
 >> pwd
 ans = /Users/zoe
@@ -280,6 +281,8 @@ v =
 ```
 
 <h2>More Matrix Operations</h2>
+
+
 ```
 >> A=[1 3; 4 6; 8 9]
 A =
