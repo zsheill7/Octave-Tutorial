@@ -230,16 +230,43 @@ ans =  4
 
 <h2>Working with Files</h2>
 
+<p>pwd stands for "print working directory" and it prints out your current location in the file directory.</p>
+
 ```
 >> pwd
 ans = /Users/zoe
 >> 
+```
+
+<p>cd stands for "change directory" and it lets you change your current location. </p>
+
+
+```
 >> cd /Users/zoe/Documents 
 >> pwd
 ans = /Users/zoe/Documents
+
+```
+
+<p>ls lists the files in your current directory.  I have a data file PDXprecip.dat saved there.  You can download PDXprecip.dat <a href="PDXprecip.dat">here</a></p>
+
+```
 >> ls
 PDXprecip.dat
+
+```
+<p>Load the data in PDXprecip.dat using the "load" command.</p>
+
+```
+
 >> load PDXprecip.dat
+
+```
+
+<p>Use the "who" command to view the current variables. </p>
+
+
+```
 >> who
 Variables in the current scope:
 
@@ -251,6 +278,11 @@ ans =
 
    12    2
 
+```
+
+<p>"whos" is a more detailed version of "who" and also gives you size and type of current variables. </p>
+
+```
 >> whos
 Variables in the current scope:
 
@@ -267,14 +299,23 @@ Variables in the current scope:
 
 Total is 10045 elements using 80360 bytes
 
->> clear sz
+
+```
+
+<p>You can create a vector using the first five elements of the data you downloaded:</p>
+
+```
 >> v = PDXprecip(1:5)
 v =
 
    1   2   3   4   5
 
+```
+
+<p>You can also create and save a new file using the "save" command.</p>
+
+```
 >> save file.mat v;
->> clear
 >> load file.mat
 >> save hello.txt v -ascii
 
@@ -312,6 +353,7 @@ ans =
 <h2></h2>
 
 <p>A(:,2) prints all elements in column 2</p>
+
 ```
 >> A(:,2)
 ans =
@@ -338,6 +380,7 @@ A =
 ```
 
 <p>A = [A, [45; 46; 47]] appends the vector [45; 46; 47] to the right of the matrix A. </p>
+
 ```
 >> A = [A, [45; 46; 47]]
 A =
