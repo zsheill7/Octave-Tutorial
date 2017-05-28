@@ -29,7 +29,6 @@ ans = 32
 <p>Octave can also be used to handle boolean operations.  Octave uses 0 for false and 1 for true </p>
 
 ```
-
 >> 1 == 2
 ans = 0
 >> 1 == 1
@@ -39,15 +38,12 @@ ans = 1
 1 || 0 
 >> ans = 1
 
-
 ```
 <h2></h2>
 <p>The default prompt is octave:1>, but you can change this default prompt with the following command: </p>
 
 ```
-
 PS1('>> ');
-
 ```
 
 The string in quotes will be the new default prompt.
