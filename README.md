@@ -6,6 +6,7 @@
 <p>If you have not yet downloaded Octave, use the following link:<p>
 <a href = "https://sourceforge.net/projects/octave/files/Octave%20MacOSX%20Binary/2013-12-30%20binary%20installer%20of%20Octave%203.8.0%20for%20OSX%2010.9.1%20%28beta%29/GNU_Octave_3.8.0-6.dmg/download">Octave Download</a>
 
+
 <h2>Basic operations</h2>
 <p>Note: Do not enter the ">>".  This is just a prompt. </p>
 
@@ -187,6 +188,238 @@ Diagonal Matrix
    0   1   0   0
    0   0   1   0
    0   0   0   1
+```
+<h2>Size and Length</h2>
+
+```
+>> A
+A =
+
+   1   2
+   3   4
+   5   6
+
+>> size(A)
+ans =
+
+   3   2
+
+>> sz = size(A)
+sz =
+
+   3   2
+
+>> size(sz)
+ans =
+
+   1   2
+
+>> size(A,1)
+ans =  3
+>> size(A,2)
+ans =  2
+>> v = [1 2 3 4]
+v =
+
+   1   2   3   4
+
+>> length(v)
+ans =  4
+
+```
+
+<h2>Working with Files</h2>
+```
+>> pwd
+ans = /Users/zoe
+>> 
+>> cd /Users/zoe/Documents 
+>> pwd
+ans = /Users/zoe/Documents
+>> ls
+PDXprecip.dat
+>> load PDXprecip.dat
+>> who
+Variables in the current scope:
+
+A          PDXprecip  ans        v
+C          a          sz         w
+
+>> size(PDXprecip)
+ans =
+
+   12    2
+
+>> whos
+Variables in the current scope:
+
+   Attr Name           Size                     Bytes  Class
+   ==== ====           ====                     =====  ===== 
+        A              3x2                         48  double
+        C              2x3                         48  double
+        PDXprecip     12x2                        192  double
+        a              1x1                          8  double
+        ans            1x2                         16  double
+        sz             1x2                         16  double
+        v              1x4                         32  double
+        w              1x10000                  80000  double
+
+Total is 10045 elements using 80360 bytes
+
+>> clear sz
+>> v = PDXprecip(1:5)
+v =
+
+   1   2   3   4   5
+
+>> save file.mat v;
+>> clear
+>> load file.mat
+>> save hello.txt v -ascii
+
+```
+
+<h2>More Matrix Operations</h2>
+```
+>> A=[1 3; 4 6; 8 9]
+A =
+
+   1   3
+   4   6
+   8   9
+
+>> A(3,2)
+ans =  9
+
+```
+
+```
+>> A(2,:)
+ans =
+
+   4   6
+
+```
+
+```
+>> A(:,2)
+ans =
+
+   3
+   6
+   9
+
+>> 
+>> A([1 3], :)
+ans =
+
+   1   3
+   8   9
+```
+
+```
+>> A(:,2) = [10; 11; 12]
+A =
+
+    1   10
+    4   11
+    8   12
+
+>> A = [A, [45; 46; 47]]
+A =
+
+    1   10   45
+    4   11   46
+    8   12   47
+
+>> size(A)
+ans =
+
+   3   3
+   
+```
+
+
+```
+
+>> A(:)
+ans =
+
+    1
+    4
+    8
+   10
+   11
+   12
+   45
+   46
+   47
+
+>> 
+>> 
+
+```
+
+```
+
+>> A = [1 2; 3 4; 5 6]
+A =
+
+   1   2
+   3   4
+   5   6
+
+>> B = [10 11; 12 13; 14 15]
+B =
+
+   10   11
+   12   13
+   14   15
+   
+   
+```
+
+```
+
+
+>> C = [A; B]
+C =
+
+    1    2
+    3    4
+    5    6
+   10   11
+   12   13
+   14   15
+
+
+```
+
+```
+>> C = [A B]
+C =
+
+    1    2   10   11
+    3    4   12   13
+    5    6   14   15
+
+>> 
+
+```
+
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
 ```
 
 
