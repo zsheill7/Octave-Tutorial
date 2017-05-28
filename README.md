@@ -3,9 +3,9 @@
 <p>I learned all of this from <a href="https://www.coursera.org/learn/machine-learning">Andrew Ng's course on Coursera</a> - be sure to check it out if you want to learn more!</p>
 
 <h3>What is Octave?</h3>
-<p>GNU Octave is a high-level language, primarily intended for numerical computations. It provides a convenient command line interface for solving linear and nonlinear problems numerically.</p>
+<p>"GNU Octave is a high-level language, primarily intended for numerical computations. It provides a convenient command line interface for solving linear and nonlinear problems."</p>
 
-<p></p>
+<p>Octave can be used to either fully implement machine learning algorithms or provide a blueprint for developers to later use another language such as Java.</p>
 
 <p>If you have not yet downloaded Octave, use the following link:<p>
 <a href = "https://sourceforge.net/projects/octave/files/Octave%20MacOSX%20Binary/2013-12-30%20binary%20installer%20of%20Octave%203.8.0%20for%20OSX%2010.9.1%20%28beta%29/GNU_Octave_3.8.0-6.dmg/download">Octave Download</a>
