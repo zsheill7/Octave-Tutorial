@@ -404,7 +404,6 @@ ans =
 <p>The following command creates a vector out of a 3 x 2 matrix by appending the second column below the first. </p>
 
 ```
-
 >> A(:)
 ans =
 
@@ -425,8 +424,8 @@ ans =
 
 <h2></h2>
 <p>Let's initialize our two matrices, A and B. </p>
-```
 
+```
 >> A = [1 2; 3 4; 5 6]
 A =
 
@@ -448,8 +447,6 @@ B =
 <p>You can also use two matrices to make a bigger matrix by appending one onto the end of the other.  Using a semicolon between A and B adds B to the bottom of A:</p>
 
 ```
-
-
 >> C = [A; B]
 C =
 
