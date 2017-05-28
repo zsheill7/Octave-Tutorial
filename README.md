@@ -283,6 +283,8 @@ v =
 <h2>More Matrix Operations</h2>
 
 
+<p>A(3, 2) finds the element at the 3rd row, 2nd column. </p>
+
 ```
 >> A=[1 3; 4 6; 8 9]
 A =
@@ -297,6 +299,7 @@ ans =  9
 ```
 
 <h2></h2>
+<p>A(2,:) prints all elements in row 2</p>
 
 ```
 >> A(2,:)
@@ -308,7 +311,7 @@ ans =
 
 <h2></h2>
 
-
+<p>A(:,2) prints all elements in column 2</p>
 ```
 >> A(:,2)
 ans =
@@ -318,15 +321,11 @@ ans =
    9
 
 >> 
->> A([1 3], :)
-ans =
 
-   1   3
-   8   9
 ```
 
 <h2></h2>
-
+<p>A(:,2) = [10; 11; 12] replaces column 2 with a new vector of your choosing)</p>
 
 ```
 >> A(:,2) = [10; 11; 12]
@@ -336,13 +335,21 @@ A =
     4   11
     8   12
 
+```
+
+<p>A = [A, [45; 46; 47]] appends the vector [45; 46; 47] to the right of the matrix A. </p>
+```
 >> A = [A, [45; 46; 47]]
 A =
 
     1   10   45
     4   11   46
     8   12   47
+```
 
+<p>size(A) finds the row and column size of the matrix A. </p>
+
+```
 >> size(A)
 ans =
 
@@ -351,6 +358,7 @@ ans =
 ```
 
 <h2></h2>
+<p>The following command creates a vector out of a 3 x 2 matrix by appending the second column below the first. </p>
 
 ```
 
@@ -373,7 +381,7 @@ ans =
 ```
 
 <h2></h2>
-
+<p>Let's initialize our two matrices, A and B. </p>
 ```
 
 >> A = [1 2; 3 4; 5 6]
@@ -394,6 +402,7 @@ B =
 ```
 
 <h2></h2>
+<p>You can also use two matrices to make a bigger matrix by appending one onto the end of the other.  Using a semicolon between A and B adds B to the bottom of A:</p>
 
 ```
 
@@ -411,6 +420,8 @@ C =
 
 ```
 
+<p>If you use a space or a comma between A and B, B will be added to the right of A.</p>
+
 ```
 >> C = [A B]
 C =
@@ -424,19 +435,7 @@ C =
 ```
 
 
-```
 
-```
-
-```
-
-```
-
-```
-
-```
-
-```
 
 
 
