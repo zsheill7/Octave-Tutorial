@@ -2,7 +2,10 @@
 
 <p>I learned all of this from <a href="https://www.coursera.org/learn/machine-learning">Andrew Ng's course on Coursera</a> - be sure to check it out if you want to learn more!</p>
 
-<p>GNU Octave is a high-level language, primarily intended for numerical computations. It provides a convenient command line interface for solving linear and nonlinear problems numerically, and for performing other numerical experiments using a language that is mostly compatible with Matlab. It may also be used as a batch-oriented language.</p>
+<h3>What is Octave?</h3>
+<p>GNU Octave is a high-level language, primarily intended for numerical computations. It provides a convenient command line interface for solving linear and nonlinear problems numerically.</p>
+
+<p></p>
 
 <p>If you have not yet downloaded Octave, use the following link:<p>
 <a href = "https://sourceforge.net/projects/octave/files/Octave%20MacOSX%20Binary/2013-12-30%20binary%20installer%20of%20Octave%203.8.0%20for%20OSX%2010.9.1%20%28beta%29/GNU_Octave_3.8.0-6.dmg/download">Octave Download</a>
