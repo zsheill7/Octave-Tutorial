@@ -9,7 +9,9 @@
 <h2>Basic operations</h2>
 <p>Note: Do not enter the ">>".  This is just a prompt. </p>
 
+
 ```
+
 >> 5+6
 ans = 11
 >> 3-2
@@ -20,12 +22,14 @@ ans = 12
 ans = 0.66667
 >> 2*5
 ans = 32
+
 ```
 
 <h2>Boolean Operations</h2>
 <p>Octave can also be used to handle boolean operations.  Octave uses 0 for false and 1 for true </p>
 
 ```
+
 >> 1 == 2
 ans = 0
 >> 1 == 1
@@ -41,7 +45,9 @@ ans = 1
 <p>The default prompt is octave:1>, but you can change this default prompt with the following command: </p>
 
 ```
+
 PS1('>> ');
+
 ```
 
 The string in quotes will be the new default prompt.
