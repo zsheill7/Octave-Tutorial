@@ -116,6 +116,7 @@ v =
   
 ```
   <p>The code below initializes a matrix with numbers from 1 to 2, incremented by 0.2. </p>
+
 ```
   
 >> 1:0.2:2 
@@ -153,6 +154,7 @@ w =
    0   0   0
 
 ```
+
 <p>You can also use random values to generate a matrix:</p>
 
 ```
@@ -172,6 +174,7 @@ ans =
 ```
 
 <p>Indentity Matrix:</p>
+
 ```
 >> eye(4)
 ans =
